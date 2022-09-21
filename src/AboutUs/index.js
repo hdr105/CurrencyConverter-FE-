@@ -8,8 +8,11 @@ const AboutUs = () => {
     <div
       className="main-container backGround"
       style={{
+        backgroundImage: `url(${
+          process.env.PUBLIC_URL + "/images/backGround.png"
+        })`,
         // background: "#D4F1F4",
-        background: "#48858c",
+
       }}
     >
       {/* NavBar.................. */}
@@ -20,7 +23,7 @@ const AboutUs = () => {
       {/* Currency Section........ */}
       <div className="about-div">
         <h1 style={{
-            color:'whitesmoke'
+            color:'#F8214B'
         }} >About us</h1>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse enim
         dolorum officiis, odit unde sunt dicta atque nobis harum accusantium eum

@@ -9,7 +9,10 @@ const DashBoard = () => {
     <div
       className="main-container backGround"
       style={{
-        background: "#48858c",
+        
+        backgroundImage: `url(${
+          process.env.PUBLIC_URL + "/images/backGround.png"
+        })`,
         height:'100vh'
       }}
     >
