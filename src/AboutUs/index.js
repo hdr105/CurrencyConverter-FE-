@@ -12,7 +12,6 @@ const AboutUs = () => {
           process.env.PUBLIC_URL + "/images/backGround.png"
         })`,
         // background: "#D4F1F4",
-
       }}
     >
       {/* NavBar.................. */}
@@ -22,9 +21,13 @@ const AboutUs = () => {
 
       {/* Currency Section........ */}
       <div className="about-div">
-        <h1 style={{
-            color:'#F8214B'
-        }} >About us</h1>
+        <h1
+          style={{
+            color: "#F8214B",
+          }}
+        >
+          About us
+        </h1>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse enim
         dolorum officiis, odit unde sunt dicta atque nobis harum accusantium eum
         debitis facilis ab. Fugit omnis error consequatur necessitatibus
@@ -44,6 +47,7 @@ const AboutUs = () => {
         nam assumenda ea error recusandae? Impedit iure expedita cumque in
         veniam.
         <br />
+        <br />
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptate
         corrupti explicabo autem doloremque fugiat est aliquam illum accusantium
         aut, numquam impedit quibusdam sed itaque incidunt illo odit officiis,
@@ -54,13 +58,21 @@ const AboutUs = () => {
         modi, temporibus blanditiis magni recusandae assumenda non alias
         veritatis dolor at ipsam! Odio libero assumenda mollitia sit ea unde
         deserunt at. Qui commodi excepturi in laborum, consectetur possimus
-        officiis? Voluptatem, ipsa maiores! Unde deserunt, similique sint animi
-        excepturi, praesentium repudiandae laboriosam soluta aliquam odit atque
-        architecto dolorum vel ipsam dolores porro velit possimus laudantium
-        sapiente debitis facilis. Veritatis quos voluptatum deleniti minus
-        repudiandae sed ea! Recusandae eveniet explicabo est illo non architecto
-        rem eum, cupiditate ea autem, error earum. Nemo delectus dolores dolorem
-        voluptatem.
+
+        <br />
+        <br />
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eum
+        fugiat iusto eius sed, illo, alias iure maxime magnam tempore assumenda
+        dolores neque nihil id facere a magni debitis amet laboriosam.
+        Praesentium vel delectus doloremque cupiditate aspernatur, esse
+        assumenda perspiciatis voluptatibus repellat, blanditiis earum autem
+        eligendi! Sapiente soluta rerum aperiam perspiciatis alias expedita
+        vitae tenetur nam cum earum excepturi necessitatibus dolores ipsa neque
+        veniam harum assumenda, laboriosam illum accusantium voluptates aliquam
+        exercitationem facere pariatur. Consectetur, nemo beatae a, eveniet
+        totam voluptates rerum sed velit at, iusto tenetur eius dicta quam! Aut
+        consectetur, dolorem quae autem sint ad. Doloremque, impedit corrupti?
       </div>
 
       {/* footer.................. */}

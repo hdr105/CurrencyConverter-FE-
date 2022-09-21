@@ -42,12 +42,9 @@ const Footer = () => {
           <div className="row">
             <div className="col-xl-4 col-lg-4 mb-50">
               <div className="footer-widget">
-                <div className="footer-logo">
-                    <img
-                      src="https://i.ibb.co/QDy827D/ak-logo.png"
-                      className="img-fluid"
-                      alt="logo"
-                    />
+           
+                <div className="footer-widget-heading" >
+                  <h3 >Our Goals</h3>
                 </div>
                 <div className="footer-text">
                   <p>
