@@ -12,8 +12,7 @@ const DashBoard = () => {
         
         backgroundImage: `url(${
           process.env.PUBLIC_URL + "/images/backGround.png"
-        })`,
-        height:'100vh'
+        })`
       }}
     >
       {/* NavBar.................. */}
@@ -24,10 +23,6 @@ const DashBoard = () => {
       {/* Currency Section........ */}
       <div
       className="exchange-portion-parent"
-        style={{
-          paddingTop: "14%",
-          paddingBottom: "12%",
-        }}
       >
         <CurencySection />
       </div>

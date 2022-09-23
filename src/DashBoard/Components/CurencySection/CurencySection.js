@@ -8,7 +8,9 @@ const CurencySection = () => {
   const [currency, setCurrency] = useState("");
   const [currencyName, setCurrencyName] = useState([]);
   const [currencyRate, setCurrencyRate] = useState([]);
-  const [key, setKey] = useState(0)
+  const [key, setKey] = useState(0);
+  const [error, setError] = useState(false);
+  const [isNegitive, setIsNegitive] = useState("")
   
 
 // exchange rate API ................................
@@ -33,20 +35,26 @@ const CurencySection = () => {
   const getExchageRate = async(e) => {
     e.preventDefault()
     try {
-     const rate = amount * currencyRate[key]
-     setCurrency(rate)
-     Swal.fire({
-      title: `${amount} AUD = ${rate + " " + currencyName[key]}`,
-      confirmButtonColor: "#F8214B",
-
-    })
+    if (amount < 0) {
+      setError(true);
+      setIsNegitive("Value Must Be Greater Then '0'")
+    } else {
+      setIsNegitive('')
+      const rate = amount * currencyRate[key]
+      setCurrency(rate)
+      Swal.fire({
+       title: `${amount} AUD = ${(Math.round(rate * 100) / 100) + " " + currencyName[key]}`,
+       confirmButtonColor: "#F8214B",
+ 
+     })
+    }
     } catch (error) {
       console.log(error);
     }
   }
 
   return (
-    <div className="col-md-12">
+    <div className="col-md-12 mt-md-3">
       <div className="exchange-portion ">
         <form onSubmit={getExchageRate}>
         <div className=" row g-3 align-items-center d-flex">
@@ -75,11 +83,11 @@ const CurencySection = () => {
             >
               From
             </label>
-            <select id="country" name="country" className=" form-control">
-              <option value="" selected>
+            <input id="country" value={"AUD"} name="country" className=" form-control"/>
+              {/* <option value="" selected>
                 AUD
               </option>
-            </select>
+            </input> */}
           </div>
           <div className="col-md-4">
             <label
@@ -104,9 +112,18 @@ const CurencySection = () => {
         
           </div>
         </div>
-        <div className="justify-content-end d-flex  mt-5">
+        <div className="justify-content-between d-flex  mt-5">
          
-          <button type="submit" className=" btn btn-primary">
+            <div style={{
+              color: 'white',
+              fontWeight: "600",
+              
+            }}>
+              {isNegitive}
+         </div>
+   
+           
+          <button type="submit" className=" btn convert_button">
             Convert
           </button>
         </div>

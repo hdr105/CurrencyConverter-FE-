@@ -61,18 +61,25 @@ const Footer = () => {
                 <div className="footer-widget-heading" >
                   <h3 >Useful Links</h3>
                 </div>
-                <ul>
+
+
+                <ul className="p-0">
                   <li>
                   <Link  to="/">
                 Home
               </Link>
                   </li>
-                  <Link className="nav-link text-white" to="/about">
+                  <li>
+                  <Link className="" to="/about">
                 About Us
               </Link>
+
+                  </li>
                 </ul>
               </div>
               <Outlet />
+
+              
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
               <div className="footer-widget">
@@ -81,18 +88,17 @@ const Footer = () => {
                 </div>
                 <div className="footer-text mb-25">
                   <p>
-                    Don’t miss to subscribe to our new feeds, kindly fill the
-                    form below.
+                  Lorem ipsum dolor sit amet, consec tetur adipisicing elit
                   </p>
                 </div>
                 <div className="subscribe-form">
-                  <form>
+                  {/* <form>
                     <input type="text" placeholder="Email Address" />
                     <button style={{color:'white' }}>
                         <FaHeart/>
                     <FontAwesomeIcon icon="fa-solid fa-envelope" />
                     </button>
-                  </form>
+                  </form> */}
                 </div>
               </div>
             </div>

@@ -13,10 +13,13 @@ const Navbar = () => {
       }}
     >
       <div className="container-fluid" style={{ height: "10vh" }}>
-        <div className="navbar-brand fw-bolder" style={{ color: "#F8224A", fontSize:'26px' }}>
+        <div
+          className="navbar-brand fw-bolder"
+          style={{ color: "#FFFFFF", fontSize: "26px" }}
+        >
           Currancy Converter
         </div>
-        {/* <button
+        <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -26,7 +29,8 @@ const Navbar = () => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon bg-white" />
-        </button> */}
+        </button>
+        
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
