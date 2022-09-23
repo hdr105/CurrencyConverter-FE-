@@ -11,10 +11,9 @@ const Footer = () => {
           <div className="row">
             <div className="col-xl-4 col-md-4 mb-30 ps-0">
               <div className="single-cta">
-
-                <div className="cta-text">
-                  <h4>Find us</h4>
-                  <span>
+                <div className="cta-text footer-widget-heading mb-md-0 mb-3">
+                  <h3>Find us</h3>
+                  <span className="">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   </span>
                 </div>
@@ -22,16 +21,16 @@ const Footer = () => {
             </div>
             <div className="col-xl-4 col-md-4 mb-30 ps-0">
               <div className="single-cta">
-                <div className="cta-text">
-                  <h4>Call us</h4>
+                <div className="cta-text footer-widget-heading mb-md-0 mb-3">
+                  <h3>Call us</h3>
                   <span>98765432100</span>
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-md-4 mb-30 ps-0">
               <div className="single-cta">
-                <div className="cta-text">
-                  <h4>Mail us</h4>
+                <div className="cta-text footer-widget-heading mb-md-0 mb-3">
+                  <h3>Mail us</h3>
                   <span>mail@info.com</span>
                 </div>
               </div>

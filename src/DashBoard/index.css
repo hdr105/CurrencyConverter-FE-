@@ -124,18 +124,14 @@
         padding-left: 15px;
         display: inline-block;
     }
-    /* .cta-text h4 {
-        margin-bottom: 4% !important;
-    } */
-    
-    .cta-text h4::before {
+    /* .cta-text h4::before {
         content: "";
         position: absolute;
-        bottom: 82%;
+        bottom: 84%;
         height: 2px;
         width: 50px;
         background: #FFFFFF;
-    }
+    } */
     
     .cta-text h4 {
         color: #FFFFFF;
