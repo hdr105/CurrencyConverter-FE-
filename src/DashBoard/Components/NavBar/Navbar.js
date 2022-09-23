@@ -15,7 +15,6 @@ const Navbar = () => {
       <div className="container-fluid" style={{ height: "10vh" }}>
         <div
           className="navbar-brand fw-bolder"
-          style={{ color: "#FFFFFF", fontSize: "26px" }}
         >
           Currancy Converter
         </div>
@@ -31,15 +30,15 @@ const Navbar = () => {
           <span className="navbar-toggler-icon bg-white" />
         </button>
         
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link text-white" to="/">
+            <li className="nav-item nav-link-home">
+              <Link className="nav-link" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/about">
+              <Link className="nav-link " to="/about">
                 About Us
               </Link>
             </li>
